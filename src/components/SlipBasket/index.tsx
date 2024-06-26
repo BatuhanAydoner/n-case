@@ -1,16 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import useAppContext from '../../hooks/useAppContext';
 
 const SlipBasket = () => {
 	const { basketItems, totalO } = useAppContext();
+	const [isBasketExpanded, setIsBasketExpanded] = useState(true);
 
 	return (
 		<div className="basket-wrapper">
 			<div className="basket-title-wrapper">
 				<div className="basket-title">Toplam Oynanan: {basketItems?.length}</div>
+				<div onClick={() => setIsBasketExpanded(prev => !prev)}>{isBasketExpanded ? 'Aç' : 'Kapat'}</div>
 			</div>
 
-			<div className="basket-items-wrapper">
+			<div className="basket-items-wrapper" data-status={isBasketExpanded ? 'open' : ''}>
 				{basketItems.map(item => (
 					<div className="basket-item" key={item.C}>
 						<div>
