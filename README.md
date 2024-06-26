@@ -1,6 +1,6 @@
 # N-Case
 
-A case project for Nesine.com.
+A case project for Nesine.com. [Demo website](https://batuhan-aydoner-n-case.netlify.app)
 
 ## Used
 
