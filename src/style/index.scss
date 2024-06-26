@@ -1,12 +1,4 @@
-$scrollbar-thumb-width: 10px;
-$background-color-primary: #fc0;
-$background-color-scrollbar-thumb: #1f2e33;
-$background-color-table-head: #1e353b;
-$color-table-head: #add0d4;
-$background-color-table-item: #779399;
-$color-table-item: #efefef;
-$background-color-match-slip-info: #ebf6e8;
-$color-match-slip-info: #1f4e56;
+@import 'variables';
 
 html {
 	overflow-x: hidden;
@@ -19,6 +11,10 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	overflow-x: hidden;
 	background-color: $background-color-primary;
+
+	@media only screen and (max-width: 768px) {
+		overflow-x: auto;
+	}
 }
 
 ::-webkit-scrollbar {
@@ -40,10 +36,15 @@ body {
 	background-color: white;
 	border-radius: 5px;
 	width: 100%;
-	max-width: 80vw;
+	max-width: 90;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	overflow-x: auto;
+
+	@media only screen and (max-width: $breakpoint-mobile) {
+		width: 1500px;
+	}
 }
 
 .table {
@@ -107,11 +108,20 @@ body {
 	background: #ffffff;
 	border: 1px solid black;
 	border-radius: 5px;
+
+	@media only screen and (max-width: $breakpoint-mobile) {
+		width: 100%;
+		padding: 5px;
+	}
 }
 
-.baset-items-wrapper {
+.basket-items-wrapper {
 	max-height: 20vh;
 	overflow-y: auto;
+
+	&[data-status=''] {
+		display: none;
+	}
 }
 
 .basket-item {
@@ -139,9 +149,9 @@ body {
 }
 
 .basket-title-wrapper {
-	display: grid;
-	grid-auto-flow: column;
-	grid-template-columns: 4fr 1fr;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .basket-title {
