@@ -11,6 +11,12 @@ test('renders table header', () => {
 	expect(screen.getByText('Event Count: 5')).toBeInTheDocument();
 });
 
+test('renders bet basket item not to be rendered', () => {
+	render(<SlipBasket />);
+
+	expect(screen.getByText('Kod:')).not.toBeInTheDocument();
+});
+
 test('renders bet basket header total count', () => {
 	render(<SlipBasket />);
 
