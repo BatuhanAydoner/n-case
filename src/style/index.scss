@@ -152,16 +152,16 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+
+	&_btn-expand {
+		cursor: pointer;
+	}
 }
 
 .basket-title {
 	font-weight: 600;
 	padding: 10px;
 	font-size: 14px;
-
-	&_btn-expand {
-		cursor: pointer;
-	}
 }
 
 .basket-items-wrapper {
