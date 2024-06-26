@@ -25,6 +25,10 @@ A case project for Nesine.com. [Demo website](https://batuhan-aydoner-n-case.net
 ## Table of Contents
 
 - [Installation](#installation)
+     - [Prerequisites](#prerequisites)
+     - [Clone the repository](#clonetherepo)
+     - [Run The Project](#runtheproject)
+     - 
 
 ## Installation
 
