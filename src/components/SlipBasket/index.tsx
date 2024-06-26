@@ -10,7 +10,7 @@ const SlipBasket = () => {
 			<div className="basket-title-wrapper">
 				<div className="basket-title">Toplam Oynanan: {basketItems?.length}</div>
 				<div className="basket-title-wrapper_btn-expand" onClick={() => setIsBasketExpanded(prev => !prev)}>
-					{isBasketExpanded ? 'Aç' : 'Kapat'}
+					{isBasketExpanded ? 'Kapat' : 'Aç'}
 				</div>
 			</div>
 
