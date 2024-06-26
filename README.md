@@ -22,8 +22,35 @@ A case project for Nesine.com. [Demo website](https://batuhan-aydoner-n-case.net
 3. **public**: Contains public files such as the main HTML file.
 4. **tests**: Contains test files.
 
+## Table of Contents
+
+- [Installation](#installation)
+
 ## Installation
 
-1. Clone the repository:
-   ```bash
+To get a local copy up and running follow these simple steps.
+
+### Prerequisites
+
+Make sure you have npm installed on your local machine. You can download and install it from [here](https://www.npmjs.com/get-npm).
+
+### Clone the repository
+
+1. Clone the repo
+
+   ```sh
    git clone https://github.com/BatuhanAydoner/n-case.git
+
+### Install Dependencies
+
+1. Install dependendencies with npm i
+
+   ```sh
+   npm i
+
+### Run The Project
+
+1. Run the project to see on the screen
+
+   ```sh
+   npm start
